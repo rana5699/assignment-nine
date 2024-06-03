@@ -1,0 +1,249 @@
+[
+  {
+    "image": "https://i.ibb.co/6P3xFPX/federico-de-luca-TQE2k-Wqy-FGk-unsplash.jpg",
+    "room_title": "Fiesta Deluxe King Room",
+    "id": 1,
+    "family_amenities": ["Crib", "High chair", "Baby bath", "Children's books"],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron",
+      "Hair Dryer"
+    ],
+    "bed": "King Size",
+    "grade": ["Private", "Seafront"],
+    "guests": 2,
+    "space": "1200 square",
+    "description": "A luxurious room with a king-size bed and a stunning seafront view. Whether you're in Sylhet for business or leisure, the Fiesta Executive Suite offers a refined and luxurious experience, ensuring that your stay is both productive and relaxing.Elevate your stay with the Fiesta Executive Suite in Sylhet, where luxury meets sophistication. This suite features a private balcony with a stunning sea view, perfect for unwinding after a long day. The room includes a king-size bed and is designed for ultimate comfort and relaxation, with modern amenities such as free Wi-Fi, air conditioning, TV, minibar, coffee maker, iron, hair dryer, and microwave. ",
+    "price": 250,
+    "status": "Available",
+    "location": "Dhaka, Bangladesh",
+    "facilities": [
+      "Living room 🛋️",
+      "Swimming pool 🏊‍♂️",
+      "Kitchen 🍽️",
+      "Gym 🏋️‍♀️",
+      "Spa 💆‍♀️",
+      "Parking 🅿️",
+      "Bar 🍸"
+    ],
+    "segment": "Hotels"
+  },
+  {
+    "image": "https://i.ibb.co/m8XVcJP/yayaq-destination-ptj2x-DWx-EJU-unsplash.jpg",
+    "room_title": "Fiesta Standard Single Room",
+    "id": 2,
+    "family_amenities": ["Crib", "High chair"],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker"
+    ],
+    "bed": "Single",
+    "grade": ["Private"],
+    "guests": 1,
+    "space": "500 square",
+    "description": "A cozy single room perfect for solo The suite includes a king-size bed and can comfortably accommodate up to three guests. Modern conveniences such as free Wi-Fi, air conditioning, TV, minibar, coffee maker, iron, hair dryer, and microwave ensure a hassle-free stayThe Fiesta Family Suite in Cox's Bazar is the ideal choice for families seeking comfort and space. This expansive suite features a separate living area and boasts a beautiful sea view, allowing guests to enjoy the tranquility and natural beauty of the coastline. The suite includes a king-size bed and can comfortably accommodate up to three guests travelers.",
+    "price": 100,
+    "status": "Booked",
+    "location": "Chittagong, Bangladesh",
+    "facilities": [
+      "Library 📚",
+      "Garden 🌷",
+      "Sauna 🔥",
+      "Cinema 🎬",
+      "Parking 🅿️",
+      "Restaurant 🍴",
+      "Lounge ☕"
+    ],
+    "segment": "Motels"
+  },
+  {
+    "image": "https://i.ibb.co/p0S8PCS/sara-dubler-Koei-7y-Yt-Io-unsplash.jpg",
+    "room_title": "Fiesta Family Suite",
+    "id": 3,
+    "family_amenities": [
+      "Crib",
+      "High chair",
+      "Baby bath",
+      "Children's books",
+      "Play area"
+    ],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron",
+      "Hair Dryer",
+      "Microwave"
+    ],
+    "bed": "King Size",
+    "grade": ["Seafront"],
+    "guests": 3,
+    "space": "1500 square",
+    "description": "Spacious family suite withFamily-friendly amenities include a crib, high chair, baby bath, children's books, and a play area, catering to the needs of younger guests. Spanning 1500 square feet, the suite offers plenty of room for everyone. Guests can also take advantage of facilities like a playground,Elevate your stay with the Fiesta Executive Suite in Sylhet, where luxury meets sophistication. This suite features a private balcony with a stunning sea view, perfect for unwinding after a long day. ",
+    "price": 300,
+    "status": "Available",
+    "location": "Cox's Bazar, Bangladesh",
+    "facilities": [
+      "Playground 🛝",
+      "Tennis court 🎾",
+      "Game room 🎮",
+      "BBQ area 🍖",
+      "Parking 🅿️",
+      "Pet friendly 🐾",
+      "Bicycle rental 🚲"
+    ],
+    "segment": "Resorts"
+  },
+  {
+    "image": "https://i.ibb.co/fpCf4pj/the-anam-twi-Ic-Isp2s-unsplash.jpg",
+    "room_title": "Fiesta Executive Suite",
+    "id": 4,
+    "family_amenities": ["Crib", "High chair"],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron",
+      "Hair Dryer",
+      "Microwave",
+      "Private Balcony"
+    ],
+    "bed": "King Size",
+    "grade": ["Seafront"],
+    "guests": 2,
+    "space": "1300 square",
+    "description": "An executive suite with a private balcony and stunning sea view.tennis court, game room, BBQ area, parking, pet-friendly options, and bicycle rental, making it perfect for an active and enjoyable family vacation. separate living area and beautiful sea view.Indulge in the ultimate luxury experience with the Fiesta Presidential Suite in Barisal. This exquisite suite features a private balcony and a jacuzzi, offering unparalleled comfort and breathtaking views of the sea. The suite includes a king-size bed and can accommodate up to four guests, making it ideal for families or groups seeking top-tier accommodation. Modern amenities such as free Wi-Fi, air conditioning, TV, minibar, coffee maker, iron, hair dryer, microwave, and jacuzzi ensure a lavish stay.",
+    "price": 350,
+    "status": "Available",
+    "location": "Sylhet, Bangladesh",
+    "facilities": [
+      "Conference room 🗣️",
+      "Rooftop terrace 🌇",
+      "Yoga studio 🧘‍♂️",
+      "Wine cellar 🍷",
+      "Parking 🅿️",
+      "Concierge 🛎️",
+      "Laundry service 🧺"
+    ],
+    "segment": "Vacation Rentals"
+  },
+  {
+    "image": "https://i.ibb.co/gJ3bw5G/gerson-repreza-Cep-Dp-Ei-ALq-M-unsplash.jpg",
+    "room_title": "Fiesta Twin Room",
+    "id": 5,
+    "family_amenities": ["Crib", "High chair", "Children's books"],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron"
+    ],
+    "bed": "Twin",
+    "grade": ["Private"],
+    "guests": 2,
+    "space": "800 square",
+    "description": "A comfortable twin room suitable for friends or family members. The room includes a king-size bed and is designed for ultimate comfort and relaxation, with modern amenities such as free Wi-Fi, air conditioning, TV, minibar, coffee maker, iron, hair dryer, and microwave. Family amenities like a crib and high chair are also available. The suite covers 1300 square feet, providing ample space for a comfortable stay.The Fiesta Deluxe King Room in Dhaka offers a luxurious stay with a king-size bed, seafront view, and modern amenities including free Wi-Fi, air conditioning, TV, minibar, and coffee maker. Family-friendly, it provides cribs, high chairs, and children's books. Guests can enjoy various facilities like a living room, swimming pool, gym, and spa. Priced at $250 per night, it accommodates up to 2 guests in a 1200-square-foot space.",
+    "price": 180,
+    "status": "Booked",
+    "location": "Khulna, Bangladesh",
+    "facilities": [
+      "Coffee shop ☕",
+      "Art gallery 🎨",
+      "Meditation room 🧘‍♀️",
+      "Bowling alley 🎳",
+      "Parking 🅿️",
+      "Golf course ⛳",
+      "Karaoke 🎤"
+    ],
+    "segment": "Lodges"
+  },
+  {
+    "image": "https://i.ibb.co/LYjcWvF/hwang-inkeom-HVN4-Rj-Sxd-BY-unsplash.jpg",
+    "room_title": "Fiesta Superior ",
+    "id": 6,
+    "family_amenities": ["Crib", "High chair"],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron",
+      "Hair Dryer"
+    ],
+    "bed": "King Size",
+    "grade": ["Private"],
+    "guests": 2,
+    "space": "1000 square",
+    "description": "A superior room with a king-size bed and modern amenities.The suite includes a king-size bed and can accommodate up to four guests, making it ideal for families or groups seeking top-tier accommodation.The room spans 1200 square feet, offering ample space for relaxation. Additionally, guests have access to top-notch facilities including a living room,In Chittagong, the Fiesta Standard Single Room is perfect for solo travelers. This cozy 500-square-foot room features free Wi-Fi, air conditioning, and a minibar. Priced at $100, it includes amenities like a library, garden, and sauna but is currently booked.",
+    "price": 220,
+    "status": "Available",
+    "location": "Rajshahi, Bangladesh",
+    "facilities": [
+      "Business center 💼",
+      "Helipad 🚁",
+      "Dance studio 💃",
+      "Cigar lounge 🚬",
+      "Parking 🅿️",
+      "Boat rental 🚤",
+      "Fireplace 🔥"
+    ],
+    "segment": "Guesthouses"
+  },
+  {
+    "image": "https://i.ibb.co/64phDSD/sasha-kaunas-TAg-GZWz6-Qg8-unsplash.jpg",
+    "room_title": "Fiesta Presidential Suite",
+    "id": 7,
+    "family_amenities": [
+      "Crib",
+      "High chair",
+      "Baby bath",
+      "Children's books",
+      "Play area",
+      "Stroller"
+    ],
+    "room_amenities": [
+      "Free Wi-Fi",
+      "Air Conditioning",
+      "TV",
+      "Minibar",
+      "Coffee Maker",
+      "Iron",
+      "Hair Dryer",
+      "Microwave",
+      "Private Balcony",
+      "Jacuzzi"
+    ],
+    "bed": "King Size",
+    "grade": ["Seafront"],
+    "guests": 4,
+    "space": "2000 square",
+    "description": "The ultimate in luxury, with a private balcony, jacuzzi, and stunning views.Guests can enjoy modern amenities such as free Wi-Fi, air conditioning, a TV, minibar, coffee maker, iron, and hair dryer. Family amenities include a crib, high chair, baby bath, and children's books, making it perfect for families.  swimming pool, kitchen, gym, spa, parking, and bar. Whether you're here for business or leisure, this room ensures a memorable stay with its blend of luxury, comfort, and breathtaking views.The Fiesta Family Suite in Cox's Bazar offers spacious comfort for families with a king-size bed, separate living area, and beautiful sea views. Priced at $300, it accommodates 3 guests in a 1500-square-foot space with facilities such as a playground, tennis court, and game room.",
+    "price": 500,
+    "status": "Available",
+    "location": "Barisal, Bangladesh",
+    "facilities": [
+      "Private cinema 🎥",
+      "Helipad 🚁",
+      "Infinity pool 🌊",
+      "Butler service 🧑‍✈️",
+      "Parking 🅿️",
+      "Exclusive beach 🏖️",
+      "Luxury car rental 🚗"
+    ],
+    "segment": "Resorts"
+  }
+]
