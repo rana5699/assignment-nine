@@ -16,8 +16,6 @@ https://assinment-nine-auth.web.app
 - password show and hide togole btn
 - Responsive for mobile,tablet and desktop.
 
-- Sort by value to accending order .
-
 ## Used npm packages for the challenges task
 
 - AOS Package
