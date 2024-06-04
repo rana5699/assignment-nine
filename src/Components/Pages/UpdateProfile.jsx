@@ -1,6 +1,40 @@
+import { useContext, useState } from "react";
 import HelmetTitle from "../Shared/HelmetTitle";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const UpdateProfile = () => {
+  const navigate = useNavigate();
+  const { user, updateProfileInfo } = useContext(AuthContext);
+  const [displayName, setDisplayName] = useState(user ? user?.displayName : "");
+  const [photoURL, setPhotoURL] = useState(user ? user?.photoURL : "");
+  const [error, setError] = useState(null);
+
+  const handleUpdate = (e) => {
+    e.preventDefault();
+
+    setError(null);
+
+    if (!user) {
+      setError("No user is logged in.");
+      return;
+    }
+
+    updateProfileInfo(user, {
+      displayName,
+      photoURL,
+    })
+      .then((result) => {
+        console.log("result:", result);
+        toast.success("Profile updated successfully!");
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log("err:", err);
+      });
+  };
+
   return (
     <div className="my-10">
       <HelmetTitle title={"Update Profile"} />
@@ -9,7 +43,7 @@ const UpdateProfile = () => {
           Update Your Profile
         </h2>
 
-        <form method="post" action="#">
+        <form onSubmit={handleUpdate}>
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-300">
               Your Name
@@ -17,6 +51,8 @@ const UpdateProfile = () => {
             <input
               className="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
               type="text"
+              value={displayName}
+              onChange={(e) => setDisplayName(e.target.value)}
             />
           </div>
 
@@ -27,8 +63,9 @@ const UpdateProfile = () => {
             <input
               className="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
               name="email"
-              id="email"
               type="url"
+              value={photoURL}
+              onChange={(e) => setPhotoURL(e.target.value)}
             />
           </div>
 
@@ -41,6 +78,7 @@ const UpdateProfile = () => {
             </button>
           </div>
         </form>
+        {error && <p>{error}</p>}
       </div>
     </div>
   );

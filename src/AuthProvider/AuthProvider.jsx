@@ -55,6 +55,7 @@ const AuthProvider = ({ children }) => {
       return setLoading(false);
     });
   };
+
   // login with facebokk
   const loginWithFacebook = () => {
     setLoading(true);

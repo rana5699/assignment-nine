@@ -1,15 +1,25 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import PrimaryBtn from "../Shared/PrimaryBtn";
 import { FaChartArea } from "react-icons/fa";
 import { AiOutlineTeam } from "react-icons/ai";
 import { IoBed } from "react-icons/io5";
+import HelmetTitle from "../Shared/HelmetTitle";
+import Loader from "../Shared/Loader";
 
 const AccommodationDetails = () => {
+  const { id } = useParams();
+  const [loadingData, setLoadingData] = useState(true);
+  const [roomData, setRoomData] = useState(null);
+  console.log("roomData:", roomData);
   const location = useLocation();
-  console.log("location:", location);
   const data = location.state;
+  if (loadingData) {
+    return <Loader />;
+  }
+
   return (
     <div className="my-10">
+      <HelmetTitle title={`${data?.room_title}`} />
       <div>
         <div
           className="relative   overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600 "

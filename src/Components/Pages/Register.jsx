@@ -142,6 +142,7 @@ const Register = () => {
                     </button>
                   </div>
                 </div>
+                {error && <p>{error.message}</p>}
               </form>
               <div className="flex justify-center w-full items-center my-5">
                 <div>

@@ -1,14 +1,14 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import GoogleBtn from "../Shared/GoogleBtn";
 import FacebookBtn from "../Shared/FacebookBtn";
-import { useContext, useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useContext } from "react";
+// import { FaEye, FaEyeSlash } from "react-icons/fa";
 import HelmetTitle from "../Shared/HelmetTitle";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const [showPassword, setShowPassword] = useState(true);
+  // const [showPassword, setShowPassword] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -65,11 +65,11 @@ const Login = () => {
                     <input
                       required
                       placeholder="Password"
-                      type={showPassword ? "Password" : "text"}
+                      type="Password"
                       className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                       name="password"
                     />
-                    <span
+                    {/* <span
                       onClick={() => setShowPassword(!showPassword)}
                       className="absolute inset-y-0 end-0 grid place-content-center px-4 cursor-pointer"
                     >
@@ -78,7 +78,7 @@ const Login = () => {
                       ) : (
                         <FaEye className="text-2xl font-bold text-black" />
                       )}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </div>
@@ -111,7 +111,10 @@ const Login = () => {
               <span className="w-1/5 border-b dark:border-gray-400 md:w-1/4"></span>
               <p className="text-lg text-gray-600">
                 No account yet?
-                <Link to="/register" className="underline">
+                <Link
+                  to="/register"
+                  className="underline text-lg font-bold text-green-500"
+                >
                   Create one
                 </Link>
               </p>
