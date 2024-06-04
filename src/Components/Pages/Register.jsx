@@ -1,20 +1,55 @@
-import { Link } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
 import GoogleBtn from "../Shared/GoogleBtn";
 import FacebookBtn from "../Shared/FacebookBtn";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import HelmetTitle from "../Shared/HelmetTitle";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(true);
+  const [error, setError] = useState(null);
+  const { updateProfileInfo, createUser } = useContext(AuthContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const userPhoto = e.target.photoUrl.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log("name:", name, email, password, userPhoto);
+    setError(null);
+
+    createUser(email, password)
+      .then((result) => {
+        updateProfileInfo(result.user, {
+          displayName: name,
+          photoURL: userPhoto,
+        })
+          .then(() => {
+            console.log("Profile Upadted");
+          })
+          .catch((error) => {
+            console.log("error:", error);
+          });
+        navigate("/");
+        toast.success("Succsessfully create new user");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log("errorMessage:", errorMessage);
+        toast.warn(errorMessage);
+      });
+  };
 
   return (
     <div>
       <HelmetTitle title={"Register"} />
+      <ToastContainer />
       <div className="">
         <section className="rounded-md p-2 bg-gray-200 my-5">
-          <ToastContainer />
           <div className="flex items-center justify-center my-3 ">
             <div className="xl:mx-auto shadow-md p-5 xl:w-full xl:max-w-sm 2xl:max-w-md bg-white rounded-lg ">
               <div className="mb-2"></div>
@@ -30,7 +65,7 @@ const Register = () => {
                   </span>
                 </Link>
               </p>
-              <form className="mt-5">
+              <form onSubmit={handleSubmit} className="mt-5">
                 <div className="space-y-4">
                   <div>
                     <label className="text-base font-medium text-gray-900">
