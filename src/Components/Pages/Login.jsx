@@ -1,20 +1,42 @@
-import { Link } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import GoogleBtn from "../Shared/GoogleBtn";
 import FacebookBtn from "../Shared/FacebookBtn";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import HelmetTitle from "../Shared/HelmetTitle";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const { loginWithEmailPassword } = useContext(AuthContext);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    loginWithEmailPassword(email, password)
+      .then((result) => {
+        console.log("result:", result);
+        toast.success("Login success");
+        navigate(location?.state ? location?.state : "/");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log("errorMessage:", errorMessage);
+        toast.warn(errorMessage);
+      });
+  };
 
   return (
     <div>
       <HelmetTitle title={"Login"} />
       <div className="relative py-3 sm:max-w-xl sm:mx-auto my-5">
         <div className="relative px-4 py-10 bg-gray-200 mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
-          <ToastContainer />
           <div className="max-w-md mx-auto">
             <h2 className="text-4xl font-extrabold text-center text-zinc-800">
               Welcome Back!
@@ -22,7 +44,7 @@ const Login = () => {
             <p className="text-center text-zinc-600 dark:text-zinc-600 mt-3">
               We missed you, sign in to continue.
             </p>
-            <form>
+            <form onSubmit={handleLogin}>
               <div className="mt-5">
                 <label className="font-semibold text-sm text-gray-600 pb-1 block">
                   E-mail

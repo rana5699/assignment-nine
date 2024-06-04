@@ -13,7 +13,7 @@ const MenuBar = () => {
   const handleLogOut = () => {
     logOut()
       .then(() => {
-        toast.success("Log Out Success");
+        toast.success("Log Out Success!");
         navigate("/");
       })
       .catch((error) => {

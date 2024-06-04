@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import HelmetTitle from "../Shared/HelmetTitle";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -24,6 +24,7 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
+        toast.success("Create New user");
         updateProfileInfo(result.user, {
           displayName: name,
           photoURL: userPhoto,
@@ -35,7 +36,6 @@ const Register = () => {
             console.log("error:", error);
           });
         navigate("/");
-        toast.success("Succsessfully create new user");
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -47,7 +47,6 @@ const Register = () => {
   return (
     <div>
       <HelmetTitle title={"Register"} />
-      <ToastContainer />
       <div className="">
         <section className="rounded-md p-2 bg-gray-200 my-5">
           <div className="flex items-center justify-center my-3 ">
