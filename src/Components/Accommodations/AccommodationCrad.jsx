@@ -9,7 +9,6 @@ const AccommodationCrad = ({ item }) => {
     image,
     room_title,
     bed,
-    grade,
     guests,
     space,
     id,

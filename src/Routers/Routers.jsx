@@ -7,6 +7,7 @@ import UpdateProfile from "../Components/Pages/UpdateProfile";
 import AccommodationDetails from "../Components/Accommodations/AccommodationDetails";
 import Login from "../Components/Pages/Login";
 import Register from "../Components/Pages/Register";
+import PrivateRoute from "../PrivetRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +21,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/accommodationDetails/:id",
-        element: <AccommodationDetails />,
+        element: (
+          <PrivateRoute>
+            <AccommodationDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/booking",
-        element: <BookingForm />,
+        element: (
+          <PrivateRoute>
+            <BookingForm />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/updateprofile",

@@ -16,6 +16,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 
@@ -67,9 +68,12 @@ const Banner = () => {
                       </h1>
                       <p className="py-6 font-jost">{item?.subTitle}</p>
                       <button className="w-40 h-12 bg-white cursor-pointer rounded-3xl border-2 border-[#AB916C] shadow-[inset_0px_-2px_0px_1px_#AB916C] group hover:bg-[#AB916C] transition duration-300 ease-in-out">
-                        <span className="font-medium text-[#333] group-hover:text-white font-jost">
+                        <Link
+                          to="/booking"
+                          className="font-medium text-[#333] group-hover:text-white font-jost"
+                        >
                           Stay Booking
-                        </span>
+                        </Link>
                       </button>
                     </div>
                   </div>

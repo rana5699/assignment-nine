@@ -6,6 +6,7 @@ import { IoBed } from "react-icons/io5";
 
 const AccommodationDetails = () => {
   const location = useLocation();
+  console.log("location:", location);
   const data = location.state;
   return (
     <div className="my-10">
@@ -44,7 +45,7 @@ const AccommodationDetails = () => {
                   {data?.room_title}
                 </h1>
                 <p className="py-6 font-jost">
-                  {data.description.length > 200
+                  {data?.description && data?.description?.length > 200
                     ? data?.description.slice(0, 200)
                     : data?.description}
                 </p>
@@ -93,7 +94,9 @@ const AccommodationDetails = () => {
           </div>
         </div>
         <dir>
-          <p className="py-6 font-jost">{data.description}</p>
+          <p className="py-6 font-jost">
+            {data?.description && data?.description}
+          </p>
         </dir>
       </div>
 

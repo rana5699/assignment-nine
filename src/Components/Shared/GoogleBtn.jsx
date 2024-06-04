@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const GoogleBtn = () => {
   const { loginWithGooogle } = useContext(AuthContext);
+  const location = useLocation();
+  console.log("location:", location.state);
+
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
@@ -13,7 +16,7 @@ const GoogleBtn = () => {
       .then((result) => {
         console.log("result:", result);
         toast.success("Congratulations ! You are our new member");
-        navigate("/");
+        navigate(location?.state ? location?.state : "/");
       })
       .catch((error) => {
         const errorMessage = error.message;

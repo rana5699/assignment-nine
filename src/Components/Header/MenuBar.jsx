@@ -1,5 +1,5 @@
 import { IoMdMenu } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import PrimaryBtn from "../Shared/PrimaryBtn";
 import "animate.css";
 import { useContext } from "react";
@@ -8,11 +8,13 @@ import { ToastContainer, toast } from "react-toastify";
 
 const MenuBar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleLogOut = () => {
     logOut()
       .then(() => {
         toast.success("Log Out Success");
+        navigate("/");
       })
       .catch((error) => {
         toast.success(error.message);

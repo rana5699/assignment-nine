@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import {
+  FacebookAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithPopup,
@@ -7,7 +8,6 @@ import {
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
-import Loader from "../Components/Shared/Loader";
 
 export const AuthContext = createContext(null);
 
@@ -18,20 +18,27 @@ const AuthProvider = ({ children }) => {
 
   // provider
   const googProvider = new GoogleAuthProvider();
+  const facebookProvider = new FacebookAuthProvider();
   // provider
 
+  // login with google
   const loginWithGooogle = () => {
     setLoading(true);
     return signInWithPopup(auth, googProvider).finally(() => {
       return setLoading(false);
     });
   };
+  // login with facebokk
+  const loginWithFacebook = () => {
+    setLoading(true);
+    return signInWithPopup(auth, facebookProvider).finally(() => {
+      return setLoading(false);
+    });
+  };
 
   const logOut = () => {
     setLoading(true);
-    return signOut(auth).finally(() => {
-      setLoading(false);
-    });
+    return signOut(auth);
   };
 
   useEffect(() => {
@@ -44,14 +51,11 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     user,
-    loginWithGooogle,
-    logOut,
     loading,
+    loginWithGooogle,
+    loginWithFacebook,
+    logOut,
   };
-
-  if (loading) {
-    return <Loader />;
-  }
 
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
