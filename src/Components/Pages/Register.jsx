@@ -13,6 +13,25 @@ const Register = () => {
   const [error, setError] = useState(null);
   const { updateProfileInfo, createUser } = useContext(AuthContext);
 
+  const verifyPassword = (password) => {
+    if (password.length < 6) {
+      return "Password must be at least 6 characters long.";
+    }
+
+    const uppercase = /[A-Z]/.test(password);
+    const lowercase = /[a-z]/.test(password);
+
+    if (!uppercase) {
+      return "Password must have at least one uppercase letter.";
+    }
+
+    if (!lowercase) {
+      return "Password must have at least one lowercase letter.";
+    }
+
+    return null;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -22,15 +41,22 @@ const Register = () => {
     console.log("name:", name, email, password, userPhoto);
     setError(null);
 
+    const passwordError = verifyPassword(password);
+    if (passwordError) {
+      setError({ message: passwordError });
+      toast.warn(passwordError);
+      return;
+    }
+
     createUser(email, password)
       .then((result) => {
-        toast.success("Create New user");
+        toast.success("Created new user");
         updateProfileInfo(result.user, {
           displayName: name,
           photoURL: userPhoto,
         })
           .then(() => {
-            console.log("Profile Upadted");
+            console.log("Profile Updated");
           })
           .catch((error) => {
             console.log("error:", error);
@@ -132,7 +158,7 @@ const Register = () => {
                       </span>
                     </div>
                   </div>
-
+                  omponent
                   <div>
                     <button
                       className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
@@ -142,7 +168,7 @@ const Register = () => {
                     </button>
                   </div>
                 </div>
-                {error && <p>{error.message}</p>}
+                {error && <p className="text-red-500 my-3">{error.message}</p>}
               </form>
               <div className="flex justify-center w-full items-center my-5">
                 <div>

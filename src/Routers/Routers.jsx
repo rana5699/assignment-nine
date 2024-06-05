@@ -8,6 +8,7 @@ import AccommodationDetails from "../Components/Accommodations/AccommodationDeta
 import Login from "../Components/Pages/Login";
 import Register from "../Components/Pages/Register";
 import PrivateRoute from "../PrivetRoute/PrivateRoute";
+import ContatUs from "../Components/Pages/ContatUs";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             <BookingForm />
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/contact",
+        element: <ContatUs />,
       },
       {
         path: "/updateprofile",

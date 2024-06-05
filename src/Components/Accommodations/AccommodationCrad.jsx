@@ -69,6 +69,8 @@ const AccommodationCrad = ({ item }) => {
             path={`/accommodationDetails/${id}`}
             data={item}
           />
+
+          {/* <button className="btn" ></button> */}
         </div>
       </div>
     </div>

@@ -39,6 +39,14 @@ const MenuBar = () => {
       <li>
         <NavLink
           className="mr-3 text-lg font-semibold hover:underline"
+          to="/contact"
+        >
+          Contact Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className="mr-3 text-lg font-semibold hover:underline"
           to="/updateprofile"
         >
           Update Profile
@@ -49,7 +57,7 @@ const MenuBar = () => {
   return (
     <div>
       <ToastContainer />
-      <div className="navbar bg-base-100">
+      <div className="navbar w-full mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,12 +70,14 @@ const MenuBar = () => {
               {navLinks}
             </ul>
           </div>
-          <Link
-            to="/"
-            className="text-2xl font-bold text-center animate__animated animate__bounceIn"
-          >
-            Hotel Mayami
-          </Link>
+          <div className="mx-auto md:mx-0">
+            <Link
+              to="/"
+              className="text-2xl font-bold text-center animate__animated animate__bounceIn"
+            >
+              Hotel Fiesta
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
