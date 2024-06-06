@@ -7,7 +7,7 @@ const Accommodations = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("./hotel.json")
+    fetch("/hotel.json")
       .then((response) => {
         return response.json();
       })
