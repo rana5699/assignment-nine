@@ -36,14 +36,7 @@ const MenuBar = () => {
           Booking
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className="mr-3 text-lg font-semibold hover:underline"
-          to="/contact"
-        >
-          Contact Us
-        </NavLink>
-      </li>
+
       <li>
         <NavLink
           className="mr-3 text-lg font-semibold hover:underline"
@@ -87,10 +80,10 @@ const MenuBar = () => {
             <div className="flex items-center">
               <section className="flex justify-center items-center mr-3 ">
                 <div className="group flex justify-center p-1 rounded-full drop-shadow-xl from-gray-800 bg-[#a21caf] text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:from-[#331029] hover:to-[#310413] cursor-pointer">
-                  <img className="w-14 rounded-full" src={user?.photoURL} />
-                  <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700 w-full">
+                  <img className="w-12 rounded-full" src={user?.photoURL} />
+                  <p className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700 w-full">
                     {user?.displayName}
-                  </span>
+                  </p>
                 </div>
               </section>
               <PrimaryBtn

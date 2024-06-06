@@ -1,10 +1,10 @@
 const ExtraOneAccommodations = () => {
   return (
-    <div>
-      <section className="relative bg-blue-50 mT-10">
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+    <div className="border-2 border-[#AB916C] p-5 rounded-t-2xl">
+      <section className="relative bg-blue-50 mT-10 ">
+        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75 rounded-t-2xl">
           <div
-            className="absolute top-0 w-full h-full bg-center bg-cover"
+            className="absolute top-0 w-full h-full bg-center bg-cover rounded-t-2xl"
             style={{
               backgroundImage:
                 "url('https://i.ibb.co/gJ3bw5G/gerson-repreza-Cep-Dp-Ei-ALq-M-unsplash.jpg",

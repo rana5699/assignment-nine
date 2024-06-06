@@ -26,13 +26,13 @@ const Accommodations = () => {
   }
 
   return (
-    <div className="my-7">
-      <div className="text-center w-3/4 mx-auto">
+    <div className="my-7 ">
+      <div className="text-center w-3/4 mx-auto ">
         <h2 className="text-3xl font-marcellus">Estate Accommodations</h2>
         <p className="font-jost my-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta
-          quas atque laboriosam deserunt, praesentium id ullam quia asperiores
-          at labore rem dolorem quo fugit cumque! Corrupti quod unde nobis.
+          Discover the epitome of luxury and comfort with our estate
+          accommodations. Nestled in a serene and picturesque location, our
+          estates offer a perfect blend of elegance and modern amenities.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">

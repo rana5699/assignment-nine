@@ -1,7 +1,7 @@
 import Accommodations from "../Accommodations/Accommodations";
 import ExtraOneAccommodation from "../Accommodations/ExtraOneAccomodations";
-import ExtraTwo from "../Accommodations/ExtraTwo";
 import Banner from "../Header/Banner";
+import ContatUs from "../Pages/ContatUs";
 import HelmetTitle from "../Shared/HelmetTitle";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         <Banner />
         <Accommodations />
         <ExtraOneAccommodation />
-        <ExtraTwo />
+        <ContatUs />
       </div>
     </div>
   );

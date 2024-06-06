@@ -67,7 +67,7 @@ const Banner = () => {
                         {item?.title}
                       </h1>
                       <p className="py-6 font-jost">{item?.subTitle}</p>
-                      <button className="w-40 h-12 bg-white cursor-pointer rounded-3xl border-2 border-[#AB916C] shadow-[inset_0px_-2px_0px_1px_#AB916C] group hover:bg-[#AB916C] transition duration-300 ease-in-out">
+                      <button className="w-40 h-12 bg-white cursor-pointer rounded-3xl border-2 border-[rgb(171,145,108)] shadow-[inset_0px_-2px_0px_1px_#AB916C] group hover:bg-[#AB916C] transition duration-300 ease-in-out">
                         <Link
                           to="/booking"
                           className="font-medium text-[#333] group-hover:text-white font-jost"

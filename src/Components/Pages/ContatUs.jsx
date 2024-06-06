@@ -5,7 +5,15 @@ import { TbWorldWww } from "react-icons/tb";
 
 const ContatUs = () => {
   return (
-    <div className="w-full px-3 md:w-10/12 mx-auto my-5  rounded-t-xl">
+    <div className="w-full px-3  mx-auto mt-14  rounded-t-xl border-2 border-[#AB916C] mb-3">
+      <div className="text-center w-3/4 mx-auto">
+        <h2 className="text-3xl font-marcellus">Contact US</h2>
+        <p className="font-jost my-3">
+          Spacious family suite withFamily-friendly amenities include a crib,
+          high chair, baby bath, childrens books, and a play area, catering to
+          the needs of younger guests.
+        </p>
+      </div>
       <section>
         <div className="relative w-full h-96 rounded-lg ">
           <img
@@ -83,7 +91,7 @@ const ContatUs = () => {
                     </div>
                   </div>
                   <div className="mb-4">
-                    <div className="relative w-full min-w-[200px] h-11 !min-w-full">
+                    <div className="relative w-full  h-11 !min-w-full">
                       <input
                         type="tel"
                         name="Phone Number"
@@ -122,10 +130,7 @@ const ContatUs = () => {
                     <label className="text-gray-700 font-light select-none cursor-pointer mt-px">
                       <p className="block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500">
                         You agree to{" "}
-                        <a
-                          href="#"
-                          className="font-medium text-gray-700 hover:text-gray-900"
-                        >
+                        <a className="font-medium text-gray-700 hover:text-gray-900">
                           Privacy Policy
                         </a>
                         .
