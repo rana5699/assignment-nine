@@ -5,7 +5,7 @@ import { TbWorldWww } from "react-icons/tb";
 
 const ContatUs = () => {
   return (
-    <div className="w-full px-3  mx-auto mt-14  rounded-t-xl border-2 border-[#AB916C] mb-3">
+    <div className="w-full px-3 md:w-10/12  mx-auto mt-14  rounded-t-xl border-2 border-[#AB916C] mb-3">
       <div className="text-center w-3/4 mx-auto">
         <h2 className="text-3xl font-marcellus">Contact US</h2>
         <p className="font-jost my-3">
