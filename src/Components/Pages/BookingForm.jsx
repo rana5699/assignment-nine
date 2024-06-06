@@ -2,7 +2,7 @@ import HelmetTitle from "../Shared/HelmetTitle";
 
 const BookingForm = () => {
   return (
-    <div className="bg-[#FAF7F4] shadow-2xl py-5 items-center justify-center my-5 p-5 font-jost rounded-lg">
+    <div className="bg-[#FAF7F4] shadow-2xl py-5 items-center justify-center my-5 p-5 font-jost rounded-lg w-full px-3 md:w-10/12 mx-auto">
       <HelmetTitle title={"Bokking"} />
       {/* form  */}
       <div>
