@@ -4,7 +4,7 @@ This E-State hotel.
 
 ## Live Link
 
-https://assignment-nine-auth-9d381.web.app/
+https://6661dc3835e46d18c95f4293--fancy-twilight-efa8ec.netlify.app/
 
 ## Features
 
