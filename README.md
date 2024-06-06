@@ -4,7 +4,7 @@ This E-State hotel.
 
 ## Live Link
 
-https://assinment-nine-auth.web.app
+https://assignment-nine-auth-9d381.web.app/
 
 ## Features
 
