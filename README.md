@@ -4,7 +4,7 @@ This E-State hotel.
 
 ## Live Link
 
-https://6661dc3835e46d18c95f4293--fancy-twilight-efa8ec.netlify.app/
+https://bright-bienenstitch-cc0119.netlify.app/
 
 ## Features
 
