@@ -21,3 +21,5 @@ https://6661dc3835e46d18c95f4293--fancy-twilight-efa8ec.netlify.app/
 - AOS Package
 - Animate.css
 - Swiper slider
+
+## Update Contact Us Page: Now Functional with EmailJS
